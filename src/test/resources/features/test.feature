@@ -33,3 +33,8 @@ Feature: Search weather in your city
     Given I want to search weather in Ha
     Then I should get the status code is 404
     And I should get the message with: city not found
+    
+  Scenario: Search weather with invalid api key
+    Given I search weather in London with invalid app id
+    Then I should get the status code is 401
+    And I should get the message with: Invalid API key. Please see http://openweathermap.org/faq#error401 for more info.

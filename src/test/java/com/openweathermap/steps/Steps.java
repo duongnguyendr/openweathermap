@@ -22,6 +22,12 @@ public class Steps {
 		SearchRequest searchRequest = new SearchRequest(cityName, Constant.API_KEY);
 		response = ApiServices.getWeatherInCity(searchRequest);
 	}
+	
+	@Given("I search weather in {} with invalid app id")
+	public void iWannaSearchWithInvalidAppId(String cityName) {
+		SearchRequest searchRequest = new SearchRequest(cityName, "invalid-key");
+		response = ApiServices.getWeatherInCity(searchRequest);
+	}
 
 	@Then("I should get the status code is {int}")
 	public void iShouldSeeTheStatusCodeAs(int statusCode) {
@@ -61,7 +67,6 @@ public class Steps {
 
 	@And("I should get the message with: {}")
 	public void iShouldGetTheMessage(String message) {
-		Assert.assertEquals(404, response.getStatusCode());
 		ErrorResponse error = response.getBody().as(ErrorResponse.class);
 		Assert.assertEquals(message, error.message);
 	}
