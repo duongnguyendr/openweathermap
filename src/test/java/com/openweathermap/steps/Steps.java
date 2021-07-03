@@ -15,18 +15,19 @@ import io.restassured.response.Response;
 
 public class Steps {
 
-	private static Response response;
+	private Response response;
+	private ApiServices apiService = new ApiServices(Constant.BASE_URL);
 
 	@Given("I want to search weather in {}")
 	public void iWannaSearchWeather(String cityName) {
 		SearchRequest searchRequest = new SearchRequest(cityName, Constant.API_KEY);
-		response = ApiServices.getWeatherInCity(searchRequest);
+		response = apiService.getWeatherInCity(searchRequest);
 	}
 	
 	@Given("I search weather in {} with invalid app id")
 	public void iWannaSearchWithInvalidAppId(String cityName) {
 		SearchRequest searchRequest = new SearchRequest(cityName, "invalid-key");
-		response = ApiServices.getWeatherInCity(searchRequest);
+		response = apiService.getWeatherInCity(searchRequest);
 	}
 
 	@Then("I should get the status code is {int}")
