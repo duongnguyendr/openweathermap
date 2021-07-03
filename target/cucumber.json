@@ -1,0 +1,518 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-03T05:03:18.884Z",
+        "before": [
+          {
+            "result": {
+              "duration": 984000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.openweathermap.steps.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Search weather with valid city name",
+        "description": "",
+        "id": "search-weather-in-your-city;search-weather-with-valid-city-name",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1442540000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I want to search weather in Ho Chi Minh",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ho Chi Minh",
+                  "offset": 28
+                }
+              ],
+              "location": "com.openweathermap.steps.Steps.iWannaSearchWeather(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1710000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should get the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 32
+                }
+              ],
+              "location": "com.openweathermap.steps.Steps.iShouldSeeTheStatusCodeAs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 302025000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should get the response relevant: Ho Chi Minh",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ho Chi Minh",
+                  "offset": 36
+                }
+              ],
+              "location": "com.openweathermap.steps.Steps.iShouldGetTheResponseRelevant(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "City name: Ho Chi Minh City",
+              "Country code: VN",
+              "Temperature: 34.0",
+              "Min temperature: 34.0",
+              "Max temperature: 34.0",
+              "Wind speed: 1.03",
+              "Cloud: 40",
+              "Weather status: scattered clouds"
+            ],
+            "result": {
+              "duration": 7253000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I want to print out the weather status",
+            "match": {
+              "location": "com.openweathermap.steps.Steps.iWannaPrintOutTheWeatherStatus()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-03T05:03:20.653Z",
+        "before": [
+          {
+            "result": {
+              "duration": 141000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.openweathermap.steps.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Search weather with valid city name and country code",
+        "description": "",
+        "id": "search-weather-in-your-city;search-weather-with-valid-city-name-and-country-code",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 302055000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I want to search weather in Ha Noi, VN",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ha Noi, VN",
+                  "offset": 28
+                }
+              ],
+              "location": "com.openweathermap.steps.Steps.iWannaSearchWeather(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 838000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I should get the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 32
+                }
+              ],
+              "location": "com.openweathermap.steps.Steps.iShouldSeeTheStatusCodeAs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6380000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I should get the response relevant: Ha Noi, VN",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ha Noi, VN",
+                  "offset": 36
+                }
+              ],
+              "location": "com.openweathermap.steps.Steps.iShouldGetTheResponseRelevant(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "City name: Hanoi",
+              "Country code: VN",
+              "Temperature: 34.0",
+              "Min temperature: 34.0",
+              "Max temperature: 34.0",
+              "Wind speed: 3.56",
+              "Cloud: 100",
+              "Weather status: overcast clouds"
+            ],
+            "result": {
+              "duration": 7273000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I want to print out the weather status",
+            "match": {
+              "location": "com.openweathermap.steps.Steps.iWannaPrintOutTheWeatherStatus()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-03T05:03:20.977Z",
+        "before": [
+          {
+            "result": {
+              "duration": 120000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.openweathermap.steps.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Search weather with invalid city name",
+        "description": "",
+        "id": "search-weather-in-your-city;search-weather-with-invalid-city-name",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 290686000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I want to search weather in Invalid Name",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Invalid Name",
+                  "offset": 28
+                }
+              ],
+              "location": "com.openweathermap.steps.Steps.iWannaSearchWeather(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 504000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I should get the status code is 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 32
+                }
+              ],
+              "location": "com.openweathermap.steps.Steps.iShouldSeeTheStatusCodeAs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3403000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I should get the message with: city not found",
+            "match": {
+              "arguments": [
+                {
+                  "val": "city not found",
+                  "offset": 31
+                }
+              ],
+              "location": "com.openweathermap.steps.Steps.iShouldGetTheMessage(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-03T05:03:21.277Z",
+        "before": [
+          {
+            "result": {
+              "duration": 201000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.openweathermap.steps.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Search weather with valid city name and invalid country code",
+        "description": "",
+        "id": "search-weather-in-your-city;search-weather-with-valid-city-name-and-invalid-country-code",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 283877000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I want to search weather in Ha Noi, US",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ha Noi, US",
+                  "offset": 28
+                }
+              ],
+              "location": "com.openweathermap.steps.Steps.iWannaSearchWeather(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 314000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I should get the status code is 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 32
+                }
+              ],
+              "location": "com.openweathermap.steps.Steps.iShouldSeeTheStatusCodeAs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2078000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I should get the message with: city not found",
+            "match": {
+              "arguments": [
+                {
+                  "val": "city not found",
+                  "offset": 31
+                }
+              ],
+              "location": "com.openweathermap.steps.Steps.iShouldGetTheMessage(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-03T05:03:21.571Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1810000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.openweathermap.steps.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Search weather with empty",
+        "description": "",
+        "id": "search-weather-in-your-city;search-weather-with-empty",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 281645000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I want to search weather in \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.openweathermap.steps.Steps.iWannaSearchWeather(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 143000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I should get the status code is 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 32
+                }
+              ],
+              "location": "com.openweathermap.steps.Steps.iShouldSeeTheStatusCodeAs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1525000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I should get the message with: city not found",
+            "match": {
+              "arguments": [
+                {
+                  "val": "city not found",
+                  "offset": 31
+                }
+              ],
+              "location": "com.openweathermap.steps.Steps.iShouldGetTheMessage(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-03T05:03:21.861Z",
+        "before": [
+          {
+            "result": {
+              "duration": 90000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.openweathermap.steps.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "Search weather with keyword less than three characters",
+        "description": "",
+        "id": "search-weather-in-your-city;search-weather-with-keyword-less-than-three-characters",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 283361000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I want to search weather in Ha",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ha",
+                  "offset": 28
+                }
+              ],
+              "location": "com.openweathermap.steps.Steps.iWannaSearchWeather(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 290000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I should get the status code is 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 32
+                }
+              ],
+              "location": "com.openweathermap.steps.Steps.iShouldSeeTheStatusCodeAs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2909000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I should get the message with: city not found",
+            "match": {
+              "arguments": [
+                {
+                  "val": "city not found",
+                  "offset": 31
+                }
+              ],
+              "location": "com.openweathermap.steps.Steps.iShouldGetTheMessage(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Search weather in your city",
+    "description": "  I want to search weather in my city",
+    "id": "search-weather-in-your-city",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/test.feature",
+    "tags": []
+  }
+]
